@@ -1,0 +1,15 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+.ipynb_checkpoints/
+
+# Project secrets
+.env
+.env.*
+trip_plan.pdf
+trip_plan.md
