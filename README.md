@@ -29,14 +29,18 @@ The plan is saved to **`trip_plan.md`** (and optionally **`trip_plan.pdf`**).
 - **ReportLab** *(optional, for PDF export)*
 
 **Key Files**
-main.py # entry point; prompts user & runs the crew; writes trip_plan.md (+ optional PDF)
-trip_agents.py # agent definitions + shared LLM config (Gemini default)
-trip_tasks.py # task prompts and expected outputs
-tools/
-init.py
-search_tools.py # Serper primary + optional DuckDuckGo fallback
-browser_tools.py # website reader (compat shim across crewai-tools versions)
-export_pdf.py # tiny Markdown -> PDF helper (optional)
+trip_planner_crewAI/
+├─ main.py # Entry point; prompts user & runs crew; writes trip_plan.md (+ optional PDF)
+├─ trip_agents.py # Agent definitions + shared LLM config (Gemini default)
+├─ trip_tasks.py # Task prompts and expected outputs
+├─ tools/
+│ ├─ init.py
+│ ├─ search_tools.py # Serper primary + optional DuckDuckGo fallback
+│ ├─ browser_tools.py # Website reader (compat shim across crewai-tools versions)
+│ └─ export_pdf.py # Tiny Markdown -> PDF helper (optional)
+├─ requirements.txt # (Optional) Pinned deps
+├─ .env # (User-provided) API keys & config
+└─ README.md
 
 
 ---
